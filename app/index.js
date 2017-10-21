@@ -1,3 +1,6 @@
+const config = require('../config.json');
+firebase.initializeApp(config);
+
 class User {
 	constructor(firebase_db, usernameStr) {
 		this.db = firebase_db
@@ -12,16 +15,6 @@ class User {
 	}
 
 }
-
-// Initialize Firebase
-firebase.initializeApp({
-  apiKey: "AIzaSyA9UcmPAqcTI6gO5JLuqb5r-totOK_bhR0",
-  authDomain: "zerosumgame-2018.firebaseapp.com",
-  databaseURL: "https://zerosumgame-2018.firebaseio.com",
-  projectId: "zerosumgame-2018",
-  storageBucket: "",
-  messagingSenderId: "724523232306"
-});
 
 let bcmdr = new User(firebase.database(), "bcmdr")
 
