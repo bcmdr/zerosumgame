@@ -1,18 +1,52 @@
 <html>
 <head>
-  <title>ZeroSumGame</title>
+
 </head>
 <body>
-  <header>
-    <h1>Zero Sum Game</h1>
-    <h2>A Diet for Your Wallet</h2>
-  </header>
-  <main class="app">
-    <section class="timer view">
-      <span>0:00</span>
-    </section>
-  </main>
-  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+
   <script src="./index.js"></script>
 </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ZeroSumGame</title>
+    <meta name="author" content="Brett Commandeur">
+    <meta name="description" content="Fasting for your Wallet">
+    <meta name="keywords" content="app">
+  </head>
+  <body>
+  <!-- MAIN -->
+
+  <header>
+    <h1>ZeroSumGame</h1>
+    <h2>Fasting for your Wallet</h2>
+  </header>
+
+  <main class="app view">
+    <section class="timer view">
+      <span class="timer">0:00</span>
+    </section>
+  </main>
+
+  <!-- IMPORTS -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+
+  <!-- CUSTOM -->
+  <script src="./index.js" type="text/javascript"></script>
+  <script type="text/javascript">
+   function autorun()
+   {
+     // Pageload Scripts Here
+     $() // test jquery
+   }
+   if (window.addEventListener) window.addEventListener("load", autorun, false);
+   else if (window.attachEvent) window.attachEvent("onload", autorun);
+   else window.onload = autorun;
+  </script>
+  </body>
 </html>
